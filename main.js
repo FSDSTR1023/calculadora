@@ -1,5 +1,5 @@
-let operacion = "";
-let resultado = "";
+let operacion = "0";
+let resultado = "0";
 let cadenaOperacionVacia=true;
 
 let pantallaOperacion=document.getElementById("operacion");
@@ -7,15 +7,20 @@ let pantallaResultado=document.getElementById("resultado");
 
 function clear() {
     operacion = "0";
+    resultado = "0";
     cadenaOperacionVacia=true;
     actualizarPantalla();
 }
 
 function borrar() {
-    operacion = operacion.substring(0, operacion.length-1);
-    if(operacion.length==0) {
+    if(!cadenaOperacionVacia) {
+        operacion = operacion.substring(0, operacion.length-1);
+        if(operacion.length==0) {
+            operacion="0";
+            cadenaOperacionVacia=true;
+        }
+    } else {
         operacion="0";
-        cadenaOperacionVacia=true;
     }
     actualizarPantalla();
 }
@@ -38,11 +43,15 @@ function addElement(element) {
 }
 
 function resolver() {
-
+    // resultado=eval(operacion);
+    resultado=new Function('return ' + operacion)();
+    cadenaOperacionVacia=true;
+    actualizarPantalla();
 }
 
 function actualizarPantalla() {
     pantallaOperacion.textContent=operacion;
+    pantallaResultado.textContent=resultado;
 }
 
 function isOperator(element) {
