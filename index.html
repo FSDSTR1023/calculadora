@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <main class="container">
+    <section class="frame-container">
+      <div class="display">
+        <h5 id="result" class="result">0</h5>
+        <p id="operation" class="operation"></p>
+      </div>
+      <div class="buttons-container">
+        <button type="button" onclick="cleanAll()" id="C" class="btn-dubble first-row">C</button>
+        <button type="button" onclick="cleanOne()" id="del" class="btn-simple first-row">←</button>
+        <button type="button" onclick="handleClick('/')" id="/" class="btn-simple first-row">/</button>
+        <button type="button" onclick="handleClick(7)" id="7" class="btn-simple second-row">7</button>
+        <button type="button" onclick="handleClick(8)" id="8" class="btn-simple second-row">8</button>
+        <button type="button" onclick="handleClick(9)" id="9" class="btn-simple second-row">9</button>
+        <button type="button" onclick="handleClick('*')" id="*" class="btn-simple second-row">×</button>
+        <button type="button" onclick="handleClick(4)" id="4" class="btn-simple third-row">4</button>
+        <button type="button" onclick="handleClick(5)" id="5" class="btn-simple third-row">5</button>
+        <button type="button" onclick="handleClick(6)" id="6" class="btn-simple third-row">6</button>
+        <button type="button" onclick="handleClick('-')" id="-" class="btn-simple third-row">-</button>
+        <button type="button" onclick="handleClick(1)" id="1" class="btn-simple four-row">1</button>
+        <button type="button" onclick="handleClick(2)" id="2" class="btn-simple four-row">2</button>
+        <button type="button" onclick="handleClick(3)" id="3" class="btn-simple four-row">3</button>
+        <button type="button" onclick="handleClick('+')" id="+" class="btn-simple four-row">+</button>
+        <button onclick="handleClick(0)" id="0" class="btn-dubble fifth-row">0</button>
+        <button onclick="handleClick('.')" id="." class="btn-simple fifth-row">.</button>
+        <button onclick="calculate()" id="=" class="btn-simple fifth-row"> =</button>
+      </div>
+      <p class="author">Code By BrunoGuerra</p>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
