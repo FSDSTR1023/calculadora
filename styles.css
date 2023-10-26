@@ -1,1 +1,68 @@
+* {
+    font-family: serif;
+    font-size: 20px;
+}
 
+#calculadora {
+    background-color: #00916e;
+    width: 300px;
+    height: 520px;
+    border-radius: 32px;
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: repeat(5, 1fr) 2fr;
+}
+
+#display {
+    background-color: #363636;
+    border-radius: 32px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-end: span 2;
+    margin: 16px;
+    border: 10px solid #077358;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.displayField {
+    background-color: #363636;
+    border: none;
+    color: white;
+}
+
+#teclado {
+    display: grid;
+    justify-items: center;
+    grid-row-start: 3;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.tecla {
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    background-color: #00916e;
+    color: white;
+}
+
+#teclaC {
+    width: 6em;
+    border-radius: 35px;
+    background-color: #85bbac
+    ;
+}
+
+#teclaCero {
+    width: 6em;
+    border-radius: 35px;
+    background-color: #85bbac
+    ;
+}
+
+.operator {
+    background-color: #85bbac
+}
