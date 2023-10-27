@@ -41,7 +41,7 @@
     grid-column-end: 5;
 }
 
-.tecla {
+.numberButton  {
     border-radius: 50%;
     height: 3em;
     width: 3em;
@@ -49,20 +49,41 @@
     color: white;
 }
 
-#teclaC {
+#equalButton {
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    background-color: #85bbac;
+    color: white;
+}
+
+#clearButton {
+    height: 3em;
     width: 6em;
     border-radius: 35px;
-    background-color: #85bbac
-    ;
+    background-color: #85bbac;
+    color: white;
 }
 
 #teclaCero {
     width: 6em;
     border-radius: 35px;
-    background-color: #85bbac
-    ;
+    background-color: #00916e;
 }
 
-.operator {
+.deleteButton {
+        border-radius: 50%;
+        height: 3em;
+        width: 3em;
+        background-color: #85bbac;
+        color: white;
+}
+
+
+.operatorButton {
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+    color: white;
     background-color: #85bbac
 }
