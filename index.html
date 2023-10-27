@@ -15,29 +15,31 @@
   <body>
     <div class="container">
       <div class="calculator">
-        <input type="text" id="input" placeholder="0" />
+        <input type="text" id="input" placeholder="0" value="" />
         <div class="buttons">
-          <button class="button top-row">C</button>
-          <button class="button top-row">+/-</button>
-          <button class="button top-row">%</button>
-          <button class="button top-row end-col">&divide</button>
-          <button class="button">7</button>
-          <button class="button">8</button>
-          <button class="button">9</button>
-          <button class="button end-col">x</button>
-          <button class="button">4</button>
-          <button class="button">5</button>
-          <button class="button">6</button>
-          <button class="button end-col">-</button>
-          <button class="button">1</button>
-          <button class="button">2</button>
-          <button class="button">3</button>
-          <button class="button end-col">+</button>
-          <button class="button colspan-2">0</button>
-          <button class="button">.</button>
-          <button class="button end-col">=</button>
+          <button class="button top-row" id="buttonC">C</button>
+          <button class="button top-row" id="buttonPlusMinus">+/-</button>
+          <button class="button top-row" id="buttonPercent">%</button>
+          <button class="button top-row end-col" id="buttonDivide">
+            &divide
+          </button>
+          <button class="button" id="button7">7</button>
+          <button class="button" id="button8">8</button>
+          <button class="button" id="button9">9</button>
+          <button class="button end-col" id="buttonMult">x</button>
+          <button class="button" id="button4">4</button>
+          <button class="button" id="button5">5</button>
+          <button class="button" id="button6">6</button>
+          <button class="button end-col" id="buttonMin">-</button>
+          <button class="button" id="button1">1</button>
+          <button class="button" id="button2">2</button>
+          <button class="button" id="button3">3</button>
+          <button class="button end-col" id="buttonPlus">+</button>
+          <button class="button colspan-2" id="button0">0</button>
+          <button class="button end-col colspan-2" id="buttonEquals">=</button>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
