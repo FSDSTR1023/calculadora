@@ -15,6 +15,7 @@ Este es un ejercicio para crear una calculadora
 
 ## Esquema de la pantalla
 
+| PAN | TA | LLA | _ |
 | --- | --- | --- | --- |
 | 7 | 8 | 9 | / |
 | 4 | 5 | 6 | * |
