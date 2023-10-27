@@ -1,0 +1,136 @@
+body {
+  width: 90%;
+  height: 50vmax;
+}
+
+#calculator {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0a9152;
+  border-radius: 1rem;
+  height: 90vmax;
+  padding: 1rem;
+}
+
+.display {
+  background-color: #424242;
+  color: #FFFFFF;
+  width: 90%;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+
+}
+
+#result {
+  height: 50%;
+  margin: 1rem;
+  font-size: 5vw;
+}
+
+#operation {
+  height: 50%;
+  margin: 1rem;
+  font-size: 5vw;
+}
+
+.buttons-container {
+  display: grid;
+  width: 100%;
+  height: 90vh;
+  margin: 1rem;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "reset reset backspace division"
+    "number7 number8 number9 multiplication"
+    "number4 number5 number6 minus"
+    "number1 number2 number3 plus"
+    "number0 number0 period equal";
+    place-content: center;
+    grid-gap: 1rem;
+}
+
+#reset {
+  grid-area: reset;
+}
+
+#backspace {
+  grid-area: backspace;
+}
+
+#division {
+  grid-area: division;
+}
+
+#number7 {
+  grid-area: number7;
+}
+
+#number8 {
+  grid-area: number8;
+}
+
+#number9 {
+  grid-area: number9;
+}
+
+#multiplication {
+  grid-area: multiplication;
+}
+
+#number4 {
+  grid-area: number4;
+}
+
+#number5 {
+  grid-area: number5;
+}
+
+#number6 {
+  grid-area: number6;
+}
+
+#minus {
+  grid-area: minus;
+}
+
+#number1 {
+  grid-area: number1;
+}
+
+#plus {
+  grid-area: plus;
+}
+
+#number0 {
+  grid-area: number0;
+}
+
+#period {
+  grid-area: period;
+}
+
+#equal {
+  grid-area: equal;
+}
+
+button {
+  border-radius: 50%;
+  height: 4rem;
+  font-size: 4vmax;
+}
+
+.operationBtn {
+  background-color: #b3d3b3;
+  font-weight: bold;
+}
+
+.numberBtn {
+  background-color: #0a9152;
+}
