@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    /* background: linear-gradient(70deg, rgb(0, 0, 0), rgb(41, 40, 40)); */
+        background: linear-gradient(70deg, rgb(24, 23, 23), rgb(104, 104, 104));
+    display: grid;
+    place-items: center;    
+}
+
+.calculator{
+    background: linear-gradient(70deg, rgb(41, 40, 40), rgb(0, 0, 0));
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 3px outset #000000;
+}
+
+.screen{
+    grid-column: 1/-1;
+    padding: 1.5rem;
+    background-color: rgb(41, 40, 40);
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    border: 3px inset #000000;
+}
+
+.num{
+    background: linear-gradient(70deg, rgb(0, 0, 0), rgb(41, 40, 40));
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-color: rgb(0,0,0);
+}
+
+.num:hover{
+    background: linear-gradient(70deg, rgb(0, 0, 0), rgb(101, 99, 99));
+}
+
+#c, #zero {
+    grid-column: span 2;
+}
+
+#equal{
+    grid-column: span 4;
+}
+
+#plus{
+    grid-row: span 2;
+}
+
+.difBack{
+    background: linear-gradient(90deg, rgb(0, 5, 4), rgb(16, 28, 28));
+}
+
+.difBack:hover{
+    background: linear-gradient(80deg, rgb(0, 0, 0), rgb(47, 84, 84));
+}
+
+.difequal{
+    background: linear-gradient(80deg, rgb(23, 0, 0), rgb(28, 16, 16));
+}
+
+.difequal:hover{
+    background: linear-gradient(80deg, rgb(23, 0, 0),rgb(118, 72, 72));
+
+}
