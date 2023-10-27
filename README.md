@@ -13,6 +13,14 @@ Este es un ejercicio para crear una calculadora
 7. Haz push a la rama (`git push origin miNombre`).
 8. Abre un pull request al finalizar.
 
+## Esquema de la pantalla
+
+| pantalla |
+| 7 | 8 | 9 | / |
+| 4 | 5 | 6 | * |
+| 1 | 2 | 3 | - |
+| C | 0 | = | + |
+
 ## Funciones
 
 ### `add(a, b)`
