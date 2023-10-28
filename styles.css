@@ -1,16 +1,22 @@
 * {
     font-family: serif;
     font-size: 20px;
+    background-color: #234870;
 }
 
 #calculadora {
     background-color: #00916e;
     width: 300px;
     height: 520px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 32px;
     display: grid;
     grid-template-columns: 4fr;
     grid-template-rows: repeat(5, 1fr) 2fr;
+    box-shadow: 20px 12px #1b3a5a;
 }
 
 #display {
@@ -30,7 +36,7 @@
     background-color: #363636;
     border: none;
     color: white;
-    
+    text-align: right;
 }
 
 #teclado {
@@ -40,6 +46,13 @@
     grid-row-end: 8;
     grid-column-start: 1;
     grid-column-end: 5;
+    background-color: #00916e;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+#teclado > div {
+    background-color: #00916e;
 }
 
 .numberButton  {
@@ -58,6 +71,10 @@
     color: white;
 }
 
+#equalButton:active {
+    background-color: #077358ca;
+}
+
 #clearButton {
     height: 3em;
     width: 6em;
@@ -66,10 +83,18 @@
     color: white;
 }
 
+#clearButton:active {
+    background-color: #077358ca;
+}
+
 #teclaCero {
     width: 6em;
     border-radius: 35px;
     background-color: #00916e;
+}
+
+#teclaCero:active {
+    background-color: #077358ca;
 }
 
 .deleteButton {
@@ -80,11 +105,18 @@
         color: white;
 }
 
-
 .operatorButton {
     border-radius: 50%;
     height: 3em;
     width: 3em;
     color: white;
     background-color: #85bbac
+}
+
+.button {
+    box-shadow: 4px 4px 4px #077358;
+}
+
+.button:active {
+    background-color: #077358ca;
 }
