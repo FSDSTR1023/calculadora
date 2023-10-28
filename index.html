@@ -15,7 +15,7 @@
   <body>
     <div class="container">
       <div class="calculator">
-        <input type="text" id="input" placeholder="0" value="" />
+        <input type="text" id="input" maxlength="7" placeholder="0" value="" />
         <div class="buttons">
           <button class="button top-row" id="buttonC">C</button>
           <button class="button top-row" id="buttonPlusMinus">+/-</button>
@@ -36,7 +36,8 @@
           <button class="button" id="button3">3</button>
           <button class="button end-col" id="buttonPlus">+</button>
           <button class="button colspan-2" id="button0">0</button>
-          <button class="button end-col colspan-2" id="buttonEquals">=</button>
+          <button class="button" id="buttonDot">.</button>
+          <button class="button end-col" id="buttonEquals">=</button>
         </div>
       </div>
     </div>

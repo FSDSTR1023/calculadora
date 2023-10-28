@@ -28,14 +28,14 @@
 
 #input {
   text-align: end;
-  overflow: none;
   width: 100%;
+  overflow: none;
   border-radius: 2rem;
   padding: 2rem 2.75rem;
   color: rgb(255, 255, 255);
   font-size: 3rem;
   font-family: "Inter", sans-serif;
-  border: none;
+  border: 3px solid darkblue;
   text-decoration: none;
 }
 
@@ -81,11 +81,9 @@
 }
 
 #buttonEquals {
-  grid-column: 3/5;
   background-color: rgb(253, 37, 37);
 }
 #buttonEquals:hover {
-  grid-column: 3/5;
   background-color: rgb(88, 96, 61);
 }
 
