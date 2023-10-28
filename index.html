@@ -8,28 +8,30 @@
 <body>
     <div id="app">
         <form name="calculator">
-            <input type="texfield" name="resp" value="" autocomplete="off" readonly >
+            <input type="textfield" name="resp" value="" autocomplete="off" readonly >
             <br>
-            <input type="button" value="7">
-            <input type="button" value="8">
-            <input type="button" value="9">
-            <input type="button" value="+">
+            <input type="button" value="7" onclick="document.calculator.resp.value+='7'">
+            <input type="button" value="8" onclick="document.calculator.resp.value+='8'">
+            <input type="button" value="9" onclick="document.calculator.resp.value+='9'">
+            <input type="button" value="+" onclick="document.calculator.resp.value+='+'">
             <br>
-            <input type="button" value="4">
-            <input type="button" value="5">
-            <input type="button" value="6">
-            <input type="button" value="-">
+            <input type="button" value="4" onclick="document.calculator.resp.value+='4'">
+            <input type="button" value="5" onclick="document.calculator.resp.value+='5'">
+            <input type="button" value="6" onclick="document.calculator.resp.value+='6'">
+            <input type="button" value="-" onclick="document.calculator.resp.value+='-'">
             <br>
-            <input type="button" value="1">
-            <input type="button" value="2">
-            <input type="button" value="3">
-            <input type="button" value="X">
+            <input type="button" value="1" onclick="document.calculator.resp.value+='1'">
+            <input type="button" value="2" onclick="document.calculator.resp.value+='2'">
+            <input type="button" value="3" onclick="document.calculator.resp.value+='3'">
+            <input type="button" value="x" onclick="document.calculator.resp.value+='*'">
             <br>
-            <input type="button" value="0">
-            <input type="button" value="C">
+            <input type="button" value="0" onclick="document.calculator.resp.value+='0'">
+            <input type="reset" value="C">
             <input type="button" value="=">
-            <input type="button" value="/">
+            <input type="button" value="/" onclick="document.calculator.resp.value+='/'">
         </form>
+    </div>
+    
     </div>
 </body>
 </html>
