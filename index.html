@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Ejercicio Crear Una Calculadora</h1>
+    <h2>BY XAVITOBCN</h2>
+    <div class="calculadora">
+        <input type="text" id="pantalla" readonly>
+        <br>
+
+        <input type="button" id="n1" value="1" onclick="agregar('1')">
+        <input type="button" id="n2" value="2" onclick="agregar('2')">
+        <input type="button" id="n3" value="3" onclick="agregar('3')">
+        <input type="b-operador" id="sumar" value="+" onclick="agregar('+')">
+        <br>
+        <input type="button" id="n4" value="4" onclick="agregar('4')">
+        <input type="button" id="n5" value="5" onclick="agregar('5')">
+        <input type="button" id="n6" value="6" onclick="agregar('6')">
+        <input type="b-operador" id="restar" value="-" onclick="agregar('-')">
+        <br>
+        <input type="button" id="n7"value="7" onclick="agregar('7')">
+        <input type="button" id="n8"value="8" onclick="agregar('8')">
+        <input type="button" id="n9" value="9" onclick="agregar('9')">
+        <input type="b-operador" id="multiplicar" value="*" onclick="agregar('*')">
+        <br>
+        <input type="button" id="n0" value="0" onclick="agregar('0')">
+        <input type="button" id="punto" value="." onclick="agregar('.')">
+        <input type="b-operador" id="dividir" value="/" onclick="agregar('/')">
+        <input type="b-operador" id="igual" value="=" onclick="calcular()">
+        <br>
+        <input type="button" id="borrar" value="C" onclick="borrar()">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
