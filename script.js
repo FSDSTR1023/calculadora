@@ -8,7 +8,6 @@ let backspace = document.getElementById('backspace');
 
 numberBtn.forEach(function(number) {
   number.addEventListener('click', function() {
-    console.log(number.textContent);
     operation.textContent += number.textContent;
   });
 });
@@ -17,7 +16,6 @@ operationBtn.forEach(function(operationSign) {
   operationSign.addEventListener('click', function() {
     if (result.textContent === '' || operation.textContent !== '') {
       operation.textContent += operationSign.textContent;
-      console.log('Hola');
     } else {
     console.log(operation.textContent);
     operation.textContent +=  result.textContent + operationSign.textContent;
