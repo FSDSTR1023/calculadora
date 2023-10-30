@@ -26,8 +26,11 @@
 
 #result {
   height: 130px;
+  box-sizing: content-box;
   margin: 1rem;
   font-size: 60px;
+  overflow: auto;
+  white-space: nowrap;
 }
 
 #operation {
@@ -55,10 +58,14 @@
 
 #clear {
   grid-area: clear;
+  background-color: #89fac5;
+  font-weight: bold;
 }
 
 #backspace {
   grid-area: backspace;
+  background-color: #b3d3b3;
+  font-weight: bold;
 }
 
 #division {
@@ -115,6 +122,8 @@
 
 #equal {
   grid-area: equal;
+  background-color: #89fac5;
+  font-weight: bold;
 }
 
 button {
@@ -138,7 +147,4 @@ button {
   background-color: #0a9152;
 }
 
-#clear, #equal {
-  background-color: #89fac5;
-  font-weight: bold;
-}
+
