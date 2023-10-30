@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora</title>
     <style>
         h1 {
             display: flex;
@@ -68,126 +68,45 @@
 <body>
     <h1>Calculadora</h1>
     <div class="calculator">
-        <input type="text" value="" id="screen">
+        <input type="text" id="screen" disabled>
         <div id="keyboard">
-            <button id="button7" class="number">7</button>
-            <button id="button8" class="number">8</button>
-            <button id="button9" class="number">9</button>
-            <button id="buttonsplit" class="operator">/</button>
-            <button id="button4" class="number">4</button>
-            <button id="button5" class="number">5</button>
-            <button id="button6" class="number">6</button>
-            <button id="buttonmultiply" class= "operator">*</button>
-            <button id="button1" class="number">1</button>
-            <button id="button2" class="number">2</button>
-            <button id="button3" class="number">3</button>
-            <button id="buttonsubtract" class="operator">-</button>
-            <button id="buttonC" class="operator">C</button>
-            <button id="button0" class="number">0</button>
-            <button id="buttonequal" class="operator">=</button>
-            <button id="buttonadd" class="operator">+</button>
+            <button id="7" class="number">7</button>
+            <button id="8" class="number">8</button>
+            <button id="9" class="number">9</button>
+            <button id="/" class="operator">/</button>
+            <button id="4" class="number">4</button>
+            <button id="5" class="number">5</button>
+            <button id="6" class="number">6</button>
+            <button id="*" class= "operator">*</button>
+            <button id="1" class="number">1</button>
+            <button id="2" class="number">2</button>
+            <button id="3" class="number">3</button>
+            <button id="-" class="operator">-</button>
+            <button id="AC" class="operator">AC</button>
+            <button id="0" class="number">0</button>
+            <button id="=" class="operator">=</button>
+            <button id="+" class="operator">+</button>
         </div>
     </div>
     <script>
         console.log("Bienvenido a la calculadora")
 
-        const screen = document.getElementById("screen")
+        const screen = document.querySelector("#screen");
+        const buttons = document.querySelectorAll("button");
 
-        const button7 = document.getElementById("button7")
-        button7.addEventListener("click", function() {
-            console.log("button 7")
-            screen.value = "7"
-        })
-
-        const button8 = document.getElementById("button8")
-        button8.addEventListener("click", function() {
-            console.log("button 8")
-            screen.value = "8"
-        })
-
-        const button9 = document.getElementById("button9")
-        button9.addEventListener("click", function() {
-            console.log("button 9")
-            screen.value = "9"
-        })
-        
-        const buttonsplit = document.getElementById("buttonsplit")
-        buttonsplit.addEventListener("click", function() {
-            console.log("button split")
-            screen.value = "/"
-        })
-
-        const button4 = document.getElementById("button4")
-        button4.addEventListener("click", function() {
-            console.log("button 4")
-            screen.value = "4"
-        })
-
-        const button5 = document.getElementById("button5")
-        button5.addEventListener("click", function() {
-            console.log("button 5")
-            screen.value = "5"
-        })
-
-        const button6 = document.getElementById("button6")
-        button6.addEventListener("click", function() {
-            console.log("button 6")
-            screen.value = "6"
-        })
-
-        const buttonmultiply = document.getElementById("buttonmultiply")
-        buttonmultiply.addEventListener("click", function() {
-            console.log("button multiply")
-            screen.value = "*"
-        })
-
-        const button1 = document.getElementById("button1")
-        button1.addEventListener("click", function() {
-            console.log("button 1")
-            screen.value = "1"
-        })
-
-        const button2 = document.getElementById("button2")
-        button2.addEventListener("click", function() {
-            console.log("button 2")
-            screen.value = "2"
-        })
-
-        const button3 = document.getElementById("button3")
-        button3.addEventListener("click", function() {
-            console.log("button 3")
-            screen.value = "3"
-        })
-
-        const buttonsubtract = document.getElementById("buttonsubtract")
-        buttonsubtract.addEventListener("click", function() {
-            console.log("button subtract")
-            screen.value = "-"
-        })
-
-        const buttonC = document.getElementById("buttonC")
-        buttonC.addEventListener("click", function() {
-            console.log("button C")
-            screen.value = ""
-        })
-
-        const button0 = document.getElementById("button0")
-        button0.addEventListener("click", function() {
-            console.log("button 0")
-            screen.value = "0"
-        })
-
-        const buttonequal = document.getElementById("buttonequal")
-        buttonequal.addEventListener("click", function() {
-            console.log("button equal")
-            screen.value = eval(screen.value)
-        })
-
-        const buttonadd = document.getElementById("buttonadd")
-        buttonadd.addEventListener("click", function() {
-            console.log("button add")
-            screen.value = "+"
-        })
+        buttons.forEach((btn) => {
+            btn.addEventListener("click", function() {
+                if(btn.id === "=") {
+                    screen.value = eval(screen.value);
+                } else if(btn.id == "AC") {
+                    screen.value = "0";
+                } else if(btn.id == "DE") {
+                    screen.value = screen.value.slice(0, -1);
+                } else {
+                    screen.value += btn.id;
+                }
+            })
+        });
     </script>
 </body>
 </html>
