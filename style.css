@@ -5,7 +5,7 @@
   flex-direction: column;
   background-color: #0a9152;
   border-radius: 1rem;
-  height: 800px;
+  height: 700px;
   width: 500px;
   padding: 1rem;
 }
@@ -126,7 +126,7 @@ button {
 
 .doubleBtn {
   box-sizing: border-box;
-  width: 100%;
+  width: 90%;
 }
 
 .operationBtn {
