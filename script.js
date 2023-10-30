@@ -4,7 +4,6 @@ const answer = document.getElementById("input");
 // to help with function so that the equals button resets after you get an answer
 let isEqualsButtonPressed = false;
 
-
 // Special buttons - creating event listeners for each
 const buttonC = document.getElementById("buttonC");
 buttonC.addEventListener("click", () => {
@@ -12,8 +11,6 @@ buttonC.addEventListener("click", () => {
   answer.ariaPlaceholder = 0;
   console.log("button C clicked");
 });
-
-done!!
 
 const buttonPlus = document.getElementById("buttonPlus");
 buttonPlus.addEventListener("click", () => {
@@ -84,7 +81,7 @@ answer.addEventListener("keydown", (event) => {
   }
 });
 
-// Number buttons // done 
+// Number buttons // done
 const button7 = document.getElementById("button7");
 button7.addEventListener("click", () => {
   if (isEqualsButtonPressed == true) {
