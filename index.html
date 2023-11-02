@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="result-screen" id="result-screen"></div>
+        <div class="operation-screen" id="operation-screen"></div>
+        <div class="buttons">
+            <button id="symbol" onclick="clearDisplay()">C</button>
+            <button id="symbol" onclick="deleteLastCharacter()">&#9003;</button>
+            <button id="symbol" onclick="appendInput('%')">%</button>
+            <button id="symbol" onclick="appendInput('/')">/</button>
+            <button id="number" onclick="appendInput('7')">7</button>
+            <button id="number" onclick="appendInput('8')">8</button>
+            <button id="number" onclick="appendInput('9')">9</button>
+            <button id="symbol" onclick="appendInput('*')">*</button>
+            <button id="number" onclick="appendInput('6')">6</button>
+            <button id="number" onclick="appendInput('5')">5</button>
+            <button id="number" onclick="appendInput('4')">4</button>
+            <button id="symbol" onclick="appendInput('-')">-</button>
+            <button id="number" onclick="appendInput('1')">1</button>
+            <button id="number" onclick="appendInput('2')">2</button>
+            <button id="number" onclick="appendInput('3')">3</button>
+            <button id="symbol" onclick="appendInput('+')">+</button>
+            <button id="symbol" onclick="window.location.href='https://www.instagram.com/bortcrafter';">
+                <img src="LOGO.jpg" alt="Imagen del botón" style="max-width: 50px; max-height: 50px;"> </button>
+            <button id="number" onclick="appendInput('0')">0</button>
+            <button id="symbol" onclick="appendInput('.')">.</button>
+            <button id="symbol" onclick="calculateResult('=')">=</button>
+            <img id="fuegos" src="fuegos.gif" alt="Fuegos artificiales" style="display: none;">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
