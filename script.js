@@ -27,12 +27,3 @@ function calculateResult() {
         operationScreen.innerText = operationText;
     }
 }
-
-document.querySelector('button[data-action="clear"]').addEventListener('click', clearDisplay);
-document.querySelector('button[data-action="delete"]').addEventListener('click', deleteLastCharacter);
-document.querySelector('button[data-action="append"]').addEventListener('click', function() {
-    var input = this.innerText;
-    appendInput(input);
-});
-document.querySelector('button[data-action="calculate"]').addEventListener('click', calculateResult);
-
