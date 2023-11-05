@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Carmen</title>
+    <link href="stylecalculadora.css" rel="stylesheet"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+      </style>
+</head>
+<body>
+    <h1>Mi Calculadora</h1>
+    <div id="contenedor">
+        <div id="calculadora">
+            <div class="display">
+                <div id="operacion"></div>
+                <div id="numeroPantalla"></div>
+        </div>
+            <button onclick="borrar()" class="col-2">C</button>  
+            <button onclick="borrarUltimo()">&lAarr;</button>   
+            <button onclick="escribe('/')">/</button>   
+            <button onclick="escribe(7)" class="numero">7</button>   
+            <button onclick="escribe(8)" class="numero">8</button>   
+            <button onclick="escribe(9)" class="numero">9</button>   
+            <button onclick="escribe('*')">X</button>   
+            <button onclick="escribe(4)"class="numero">4</button>   
+            <button onclick="escribe(5)"class="numero">5</button>   
+            <button onclick="escribe(6)"class="numero">6</button>   
+            <button onclick="escribe('-')">-</button>   
+            <button onclick="escribe(1)" class="numero">1</button>   
+            <button onclick="escribe(2)" class="numero">2</button>   
+            <button onclick="escribe(3)"class="numero">3</button>   
+            <button onclick="escribe('+')" >+</button>
+            <button onclick="escribe(0)"class="col-2 numero">0</button>
+            <button id="coma" onclick="escribe('.')" class="numero">.</button>
+            <button id="calcular" onclick="calcular('=')">=</button>
+     
+    
+    
+        </div>
+        
+    
+    
+    
+       </div>
+    
+    
+        <script>
+
+            const operacion = document.getElementById('operacion');
+            const numeroPantalla = document.getElementById('numeroPantalla');
+          
+           
+            function escribe(teclas){
+                
+                numeroPantalla.innerText = numeroPantalla.innerText + teclas;
+                console.log(teclas)
+           
+
+                    const texto=numeroPantalla.innerText;
+                    const contenidoContieneComa = texto.includes('.');
+
+               
+            }
+
+            function borrar(){
+                numeroPantalla.innerText = " ";
+                operacion.innerText = " ";
+
+            } 
+            function calcular(){
+
+            
+                const contenido=numeroPantalla.innerText;
+                const resultado=eval(contenido)
+               
+                numeroPantalla.innerText=resultado;
+                operacion.innerText= resultado;
+                
+                
+             }
+          
+
+
+             function borrarUltimo(){
+               
+                let contenido = numeroPantalla.innerText;
+
+                 // Verificar si la cadena tiene al menos un carácter
+                if (contenido.length > 0) {
+                    // Borrar el último carácter
+                 contenido = contenido.slice(0, -1);
+
+                 // Actualizar el número en la pantalla
+                 numeroPantalla.innerText = contenido;
+             }
+             }
+           
+            
+           
+
+
+
+
+            
+           
+      
+
+
+
+        </script>
+    
+</body>
+</html>
