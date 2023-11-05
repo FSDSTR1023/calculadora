@@ -51,6 +51,7 @@ body {
 }
 
 button {
+    font-family: 'Orbitron', sans-serif;
     font-size: 24px;
     background-color: #222;
     color: #fff;
