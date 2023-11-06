@@ -1,0 +1,91 @@
+body{
+    font-family: system-ui;
+    color: #373737;
+}
+.calculator-nav{
+    padding: 10px;
+    margin: 4px;
+    color: #616161;
+    text-align: center;
+}
+.calculator-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#f7f7f7;
+    height: 100%;
+    width: 100%;
+}
+.calculator-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 331px;
+    padding: 0px 0px 33px 0px;
+    border-radius: 11px;
+    box-shadow: -6px -6px 13px #fff, 6px 6px 13px rgb(0,0,0,.16);
+}
+.screen{
+    margin: 37px 15px 0px;
+}
+input#display{
+    box-shadow: inset -6px -6px 13px #fff, inset 6px 6px 13px #e6e6e6;
+    min-height: 68px;
+    border: none;
+    text-align: end;
+    border-radius: 20px;
+    margin: 10px 0px 21px 0px;
+    padding: 7px 21px 7px 10px;
+    font-size:40px;
+    background-color: #ecf0f3;
+    width: 100%;
+}
+.numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 17px;
+}
+button {
+    box-shadow: -6px -6px 14px #fff, 6px 6px 14px rgb(0,0,0,.16);
+    background-color:#ecf0f3;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height:50px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #636363;
+}
+button:active{
+    box-shadow: inset 8px 11px 21px #fff, inset 6px 6px 14px rgb(0,0,0,.16);
+}
+.zero{
+    height: 100%;
+    grid-row: 5 / 5;
+    grid-column: 3 / 1;
+    width: 100%;
+    border-radius: 42px;
+    box-shadow: -6px -6px 13px #fff, 6px 6px 14px rgb(0,0,0,.16);
+}
+.delete{
+    height: 100%;
+    grid-row: 1 / 2;
+    grid-column: 3 / 1;
+    width: 100%;
+    border-radius: 42px;
+    box-shadow: -6px -6px 13px #fff, 6px 6px 14px rgb(0,0,0,.16);
+}
+
+@media screen and (max-width: 400px) {
+    .calculator-container{
+        max-width: 226px;
+    }
+    button{
+        width: 30px;
+        height: 30px;
+        font-weight: bold;
+        font-size: 18px;
+        color: #636363;
+    }
+}    
