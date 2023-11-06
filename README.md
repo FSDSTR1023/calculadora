@@ -48,3 +48,18 @@ Esta función limpia la pantalla
 
 1. El diseño puede ser tan sencillo como hacer un grid con los botones, como tan complejo como trabajar el CSS para que se parezca a una calculadora Braun ET66
 2. En JS existe una función [eval()](https://www.w3schools.com/jsref/jsref_eval.asp) que permite convertir un string en una operación y realizar el cálculo. 
+
+
+
+
+
+const num0 = document.getElementById("0");
+      const num1 = document.getElementById("1");
+      const num2 = document.getElementById("2");
+      const num3 = document.getElementById("3");
+      const num4 = document.getElementById("4");
+      const num5 = document.getElementById("5");
+      const num6 = document.getElementById("6");
+      const num7 = document.getElementById("7");
+      const num8 = document.getElementById("8");
+      const num9 = document.getElementById("9");

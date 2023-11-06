@@ -9,26 +9,69 @@
   <body>
     <div class="calculadora">
       <div class="pantalla">
-        <input type="text" />
+        <input type="text" id="screen" />
       </div>
       <div class="botones">
-        <div class="numero"><button>7</button></div>
-        <div class="numero"><button>8</button></div>
-        <div class="numero"><button>9</button></div>
-        <div class="operador"><button>/</button></div>
-        <div class="numero"><button>4</button></div>
-        <div class="numero"><button>5</button></div>
-        <div class="numero"><button>6</button></div>
-        <div class="operador"><button>*</button></div>
-        <div class="numero"><button>1</button></div>
-        <div class="numero"><button>2</button></div>
-        <div class="numero"><button>3</button></div>
-        <div class="operador"><button>-</button></div>
-        <div class="operador"><button>C</button></div>
-        <div class="numero"><button>0</button></div>
-        <div class="operador"><button>=</button></div>
-        <div class="operador"><button>+</button></div>
+        <div class="numero" id="7"><button>7</button></div>
+        <div class="numero" id="8"><button>8</button></div>
+        <div class="numero" id="9"><button>9</button></div>
+        <div class="operador" id="/"><button>/</button></div>
+        <div class="numero" id="4"><button>4</button></div>
+        <div class="numero" id="5"><button>5</button></div>
+        <div class="numero" id="6"><button>6</button></div>
+        <div class="operador" id="*"><button>*</button></div>
+        <div class="numero" id="1"><button>1</button></div>
+        <div class="numero" id="2"><button>2</button></div>
+        <div class="numero" id="3"><button>3</button></div>
+        <div class="operador" id="-"><button>-</button></div>
+        <div class="operador" id="c"><button>C</button></div>
+        <div class="numero" id="0"><button>0</button></div>
+        <div class="operador" id="="><button>=</button></div>
+        <div class="operador" id="+"><button>+</button></div>
       </div>
     </div>
+    <script>
+      const botones = document.querySelectorAll("button");
+
+      const clear = document.getElementById("c");
+
+      let pantalla = document.querySelector("#screen");
+
+      const equal = document.getElementById("=");
+
+      let clearFlag = false;
+
+      let operacion = "";
+
+      function reset() {
+        pantalla.value = null;
+      }
+
+      botones.forEach((boton) => {
+        boton.addEventListener("click", function () {
+          if (clearFlag) {
+            pantalla.value = "";
+            clearFlag = false;
+          }
+          if (boton.textContent === "=") {
+            try {
+              operacion = eval(operacion);
+              pantalla.value = operacion;
+            } catch (error) {
+              pantalla.value = "Error";
+            }
+            clearFlag = true;
+          } else {
+            operacion += boton.textContent;
+            pantalla.value = operacion;
+          }
+        });
+      });
+
+      clear.addEventListener("click", function () {
+        pantalla.value = "";
+        operacion = "";
+      });
+    </script>
   </body>
 </html>
