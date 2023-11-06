@@ -1,0 +1,51 @@
+*{
+    margin: 0%;
+    padding:0%;
+}
+
+html,
+body {
+    text-align: center;
+    margin-left: 16rem;
+    margin-top: 4rem;
+    padding: 5rem;
+    background-color: rgb(144, 251, 215);
+}
+
+
+
+table {
+    width: 50%;
+    background-color: rgb(238, 148, 220);
+    padding: 2rem;
+    border-radius: 3rem;
+    
+    
+   
+   
+}
+
+button {
+    width: 100%;
+    font-size: 150%;
+    border-radius: 10rem;
+    border-color: rgb(228, 132, 233);
+    background-color: rgb(227, 174, 235);
+    height: 3rem;
+    display: grid;
+    align-items: center;
+    border-bottom: none;
+
+
+    
+
+
+}
+
+button:hover {
+    color: yellowgreen;
+}
+
+.ac {
+    color: rgb(155, 3, 28);
+}
