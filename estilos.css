@@ -1,0 +1,69 @@
+html button, input{
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+    text-shadow: 10px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .calculadora {
+    display: grid;
+    grid-template-rows: auto 1fr; 
+    gap: 20px;
+    border: 5px solid lime;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: grey;
+    height: 70%;
+    box-shadow: 20px 20px 10px rgb(0, 0, 0); /* Efecto de sombra */
+
+
+  }
+  .pantalla input{
+    width: 95%;
+    height: 125px;
+    border-radius: 25px;
+    border: 5px solid lime;
+    background-color: lightgreen;
+    font-size: 40px;
+    color: red;
+    direction: rtl;
+    outline: none;
+    caret-color: transparent;
+  }
+
+
+  
+.botones{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    
+    
+    
+}
+.botones button{
+    background-color: lightgreen;
+    width: 80px;
+    height: 100px;
+    font-size: 25px;
+    border: 5px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0); /* Efecto de sombra */
+    
+}
+.numero button{
+    background-color: lime;
+    color: red;
+}
+.operador button{
+    background-color: lightgreen;
+    color: red;
+    
+}
