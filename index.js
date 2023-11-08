@@ -1,22 +1,12 @@
-function setResult(value) {
-    document.getElementById('result').innerHTML = value;
+function agregar(valor) {
+    document.getElementById('pantalla').value += valor
+}
+function borrar() {
+    document.getElementById('pantalla').value =' '
 }
 
-function getResult() {
-    return(document.getElementById('result').innerHTML);
-}
-
-function add(key) { 
-    var result = getResult();
-    if (result!='0' || isNaN(key)) setResult(result + key);
-    else setResult(key);
-}
-
-function calc() {
-    var result = eval(getResult()); 
-    setResult(result);
-}
-
-function del() { 
-    setResult(0);
+function calcular() {
+    const valorPantalla = document.getElementById('pantalla').value
+    const resultado = eval(valorPantalla)
+    document.getElementById('pantalla').value = resultado
 }
